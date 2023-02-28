@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import ParseSwift
 // TODO: Pt 1 - Import Parse Swift
 
 @main
@@ -17,12 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // TODO: Pt 1 - Initialize Parse SDK
         // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
+        ParseSwift.initialize(applicationId: "6CQvBs8zWZdvd5qupyKdTUBF8nSTsKC9P8w5HNvp",
+                              clientKey: "D3qoZtzJCpqSqvvHFIRnYAI0Eb177MotuvRUa7u9",
+                              serverURL: URL(string: "https://parseapi.back4app.com")!)
 
 
         // TODO: Pt 1: - Instantiate and save a test parse object to your server
         // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/1%20-%20Your%20first%20Object.xcplaygroundpage/Contents.swift#L121
-
-
+        
         return true
     }
 
@@ -43,5 +45,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 // TODO: Pt 1 - Create Test Parse Object
 // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/1%20-%20Your%20first%20Object.xcplaygroundpage/Contents.swift#L33
-
-
